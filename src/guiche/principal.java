@@ -4,6 +4,8 @@
  */
 package guiche;
 
+import model.Sistema;
+
 /**
  *
  * @author Tucaa
@@ -148,12 +150,22 @@ public class principal extends javax.swing.JFrame {
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/Letter N blue.png"))); // NOI18N
         jButton2.setToolTipText("");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 180, 170));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/Letter P red.png"))); // NOI18N
         jButton3.setToolTipText("");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 620, 180, 170));
 
         panel2.setBackground(new java.awt.Color(85, 157, 229));
@@ -288,7 +300,9 @@ public class principal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 400, 180, 100));
-
+        
+        initSenhasGeradas();
+        
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("CHAMAR");
@@ -306,7 +320,7 @@ public class principal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 510, 180, 260));
-
+        
         getAccessibleContext().setAccessibleDescription("");
 
         pack();
@@ -371,11 +385,32 @@ public class principal extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    	Sistema.getInstance().gerarSenhaConvencional();
+    	initSenhasGeradas();
+    }//GEN-LAST:event_jButton1ActionPerformed
+    
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       Sistema.getInstance().gerarSenhaPrioritaria();
+       initSenhasGeradas();
+    }//GEN-LAST:event_jButton1ActionPerformed
+    
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    	Sistema.getInstance().chamarSenha();
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
-
+    
+    private void initSenhasGeradas(){
+    	jTextField2.setText(Sistema.getInstance().getSenhaGerada(0).toString());
+    	jTextField25.setText(Sistema.getInstance().getSenhaGerada(1).toString());
+    	jTextField26.setText(Sistema.getInstance().getSenhaGerada(2).toString());
+    	jTextField24.setText(Sistema.getInstance().getSenhaGerada(3).toString());
+    	jTextField22.setText(Sistema.getInstance().getSenhaGerada(4).toString());
+    	jTextField23.setText(Sistema.getInstance().getSenhaGerada(5).toString());
+    	jTextField10.setText(Sistema.getInstance().getSenhaGerada(6).toString());
+    }
+    
     /**
      * @param args the command line arguments
      */
