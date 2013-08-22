@@ -4,6 +4,8 @@
  */
 package guiche;
 
+import java.awt.Frame;
+
 import model.Sistema;
 
 /**
@@ -386,20 +388,21 @@ public class principal extends javax.swing.JFrame {
     
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     	Sistema.getInstance().gerarSenhaConvencional();
-    	initSenhasGeradas();
+    	updateSenhasGeradas();
     }//GEN-LAST:event_jButton1ActionPerformed
     
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        Sistema.getInstance().gerarSenhaPrioritaria();
-       initSenhasGeradas();
+       updateSenhasGeradas();
     }//GEN-LAST:event_jButton1ActionPerformed
     
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
     	Sistema.getInstance().chamarSenha();
-        initSenhasChamadas();
+        updateSenhasChamadas();
+        ((guiche) guiche).update();
     }//GEN-LAST:event_jButton4ActionPerformed
     
-    private void initSenhasGeradas(){
+    private void updateSenhasGeradas(){
     	jTextField2.setText(Sistema.getInstance().getSenhaGerada(0));
     	jTextField25.setText(Sistema.getInstance().getSenhaGerada(1));
     	jTextField26.setText(Sistema.getInstance().getSenhaGerada(2));
@@ -409,7 +412,7 @@ public class principal extends javax.swing.JFrame {
     	jTextField10.setText(Sistema.getInstance().getSenhaGerada(6));
     }
     
-    private void initSenhasChamadas(){
+    private void updateSenhasChamadas(){
     	jTextField3.setText(Sistema.getInstance().getSenhaChamada(0));
     	jTextField27.setText(Sistema.getInstance().getSenhaChamada(1));
     	jTextField30.setText(Sistema.getInstance().getSenhaChamada(2));
@@ -451,6 +454,7 @@ public class principal extends javax.swing.JFrame {
             @Override
             public void run() {
                 new principal().setVisible(true);
+                guiche = new guiche();
                 new guiche().setVisible(true);
             }
         });
@@ -481,5 +485,6 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField31;
     private java.awt.Panel panel1;
     private java.awt.Panel panel2;
+    private static Frame guiche;
     // End of variables declaration//GEN-END:variables
 }

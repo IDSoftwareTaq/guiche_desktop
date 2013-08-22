@@ -17,7 +17,7 @@ public class FilaPrioritaria {
 		filaConvencional = new ArrayList<Senha>();
 		filaPrioritaria = new ArrayList<Senha>();
 		cont = 0;
-		senha = 0;
+		senha = 1;
 		NUMEROPRIORIDADE = 3;
 	}
 	

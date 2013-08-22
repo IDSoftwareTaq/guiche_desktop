@@ -4,6 +4,8 @@
  */
 package guiche;
 
+import model.Sistema;
+
 /**
  *
  * @author Tucaa
@@ -164,8 +166,9 @@ public class guiche extends javax.swing.JFrame {
                 jTextField10ActionPerformed(evt);
             }
         });
+        
         getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 290, 230, 130));
-
+        
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -200,7 +203,17 @@ public class guiche extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
+    public static void update(){
+    	jTextField1.setText(Sistema.getInstance().getSenhaChamada(0));
+    	jTextField6.setText(Sistema.getInstance().getSenhaChamada(1));
+    	jTextField8.setText(Sistema.getInstance().getSenhaChamada(2));
+    	jTextField10.setText(Sistema.getInstance().getSenhaChamada(3));
+    	jTextField5.setText(Sistema.getInstance().getSenhaChamada(4));
+    	jTextField7.setText(Sistema.getInstance().getSenhaChamada(5));
+    	jTextField9.setText(Sistema.getInstance().getSenhaChamada(6));
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -239,12 +252,12 @@ public class guiche extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private static javax.swing.JTextField jTextField1;
+    private static javax.swing.JTextField jTextField10;
+    private static javax.swing.JTextField jTextField5;
+    private static javax.swing.JTextField jTextField6;
+    private static javax.swing.JTextField jTextField7;
+    private static javax.swing.JTextField jTextField8;
+    private static javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }
