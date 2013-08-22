@@ -40,6 +40,8 @@ public class guiche extends javax.swing.JFrame {
         jTextField10 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Guiche Eletrônico - V. 0.0.1");
+        setBounds(new java.awt.Rectangle(350, 50, 1280, 960));
         setMinimumSize(new java.awt.Dimension(1280, 960));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

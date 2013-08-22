@@ -56,11 +56,11 @@ public class principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
 
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Guiche Eletrônico - V. 0.0.1");
         setBackground(new java.awt.Color(255, 255, 255));
-        setBounds(new java.awt.Rectangle(0, 0, 1280, 768));
-        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setLocationByPlatform(true);
+        setBounds(new java.awt.Rectangle(350, 50, 1280, 960));
         setPreferredSize(new java.awt.Dimension(1280, 960));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
