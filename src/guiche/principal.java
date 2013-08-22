@@ -301,8 +301,6 @@ public class principal extends javax.swing.JFrame {
         });
         getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 400, 180, 100));
         
-        initSenhasGeradas();
-        
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("CHAMAR");
@@ -398,17 +396,27 @@ public class principal extends javax.swing.JFrame {
     
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
     	Sistema.getInstance().chamarSenha();
-        // TODO add your handling code here:
+        initSenhasChamadas();
     }//GEN-LAST:event_jButton4ActionPerformed
     
     private void initSenhasGeradas(){
-    	jTextField2.setText(Sistema.getInstance().getSenhaGerada(0).toString());
-    	jTextField25.setText(Sistema.getInstance().getSenhaGerada(1).toString());
-    	jTextField26.setText(Sistema.getInstance().getSenhaGerada(2).toString());
-    	jTextField24.setText(Sistema.getInstance().getSenhaGerada(3).toString());
-    	jTextField22.setText(Sistema.getInstance().getSenhaGerada(4).toString());
-    	jTextField23.setText(Sistema.getInstance().getSenhaGerada(5).toString());
-    	jTextField10.setText(Sistema.getInstance().getSenhaGerada(6).toString());
+    	jTextField2.setText(Sistema.getInstance().getSenhaGerada(0));
+    	jTextField25.setText(Sistema.getInstance().getSenhaGerada(1));
+    	jTextField26.setText(Sistema.getInstance().getSenhaGerada(2));
+    	jTextField24.setText(Sistema.getInstance().getSenhaGerada(3));
+    	jTextField22.setText(Sistema.getInstance().getSenhaGerada(4));
+    	jTextField23.setText(Sistema.getInstance().getSenhaGerada(5));
+    	jTextField10.setText(Sistema.getInstance().getSenhaGerada(6));
+    }
+    
+    private void initSenhasChamadas(){
+    	jTextField3.setText(Sistema.getInstance().getSenhaChamada(0));
+    	jTextField27.setText(Sistema.getInstance().getSenhaChamada(1));
+    	jTextField30.setText(Sistema.getInstance().getSenhaChamada(2));
+    	jTextField28.setText(Sistema.getInstance().getSenhaChamada(3));
+    	jTextField31.setText(Sistema.getInstance().getSenhaChamada(4));
+    	jTextField29.setText(Sistema.getInstance().getSenhaChamada(5));
+    	jTextField11.setText(Sistema.getInstance().getSenhaChamada(6));
     }
     
     /**

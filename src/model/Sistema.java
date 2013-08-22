@@ -39,23 +39,25 @@ public class Sistema {
 		Senha retorno = fila.chamarSenha();
 		if (retorno == null){
 			return new Senha(0,0);
+		}else{
+			senhasChamadas.add(0, retorno);
 		}
 		return retorno;
 	}
 	
-	public Senha getSenhaChamada(int indice){
+	public String getSenhaChamada(int indice){
 		if ((indice+1) > senhasChamadas.size()){
-			return (new Senha(0,0));
+			return "";
 		}else{
-			return senhasChamadas.get(indice);
+			return senhasChamadas.get(indice).toString();
 		}
 	}
 	
-	public Senha getSenhaGerada(int indice){
+	public String getSenhaGerada(int indice){
 		if ((indice+1) > senhasGeradas.size()){
-			return (new Senha(0,0));
+			return "";
 		}else{
-			return senhasGeradas.get(indice);
+			return senhasGeradas.get(indice).toString();
 		}
 	}
 	
