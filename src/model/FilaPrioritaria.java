@@ -56,7 +56,7 @@ public class FilaPrioritaria {
 		return senhaAux;
 	}
 	
-	public Senha chamarSenha(){
+	public Senha chamarSenhaPersonalizado(){
 		Senha retorno = null;
 		if (filaPrioritaria.size() > 0) {
 			if (cont == NUMEROPRIORIDADE){
@@ -77,6 +77,20 @@ public class FilaPrioritaria {
 				retorno = chamarSenhaConvencional();
 			}
 		}
+		return retorno;
+	}
+	
+	public Senha chamarSenha(){
+		Senha retorno = null;
+		
+		if (filaPrioritaria.size() > 0){
+			retorno = filaPrioritaria.remove(0);
+		}else{
+			if (filaConvencional.size() > 0){
+				retorno = filaConvencional.remove(0);
+			}
+		}
+		
 		return retorno;
 	}
 	

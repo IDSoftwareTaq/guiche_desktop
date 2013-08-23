@@ -51,6 +51,19 @@ public class Sistema {
 		return retorno;
 	}
 	
+	public Senha chamarSenhaPersonalizado(){
+		Senha retorno = fila.chamarSenhaPersonalizado();
+		if (retorno == null){
+			return new Senha(0,0);
+		}else{
+			senhasChamadas.add(0, retorno);
+		}
+		
+		Thread t = new Thread(new Play());
+		t.start();
+		return retorno;
+	}
+	
 	public String getSenhaChamada(int indice){
 		if ((indice+1) > senhasChamadas.size()){
 			return "";
