@@ -88,7 +88,7 @@ public class Sistema {
 	
 	private void tocaMusica(){
 		try {
-			AudioClip som = Applet.newAudioClip(new File("src/sound/som.wav").toURL());
+			AudioClip som = Applet.newAudioClip(new File("src/sound/som.wav").toURI().toURL());
 			som.play();
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block

@@ -6,7 +6,7 @@ package guiche;
 
 import java.awt.Frame;
 
-import javax.swing.JPanel;
+import javax.swing.ImageIcon;
 
 import model.Sistema;
 
@@ -59,7 +59,7 @@ public class principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
 
-
+        setIconImage(new ImageIcon(getClass().getResource("/icone.png")).getImage()); 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Guiche Eletrônico - V. 0.0.1");
         setBackground(new java.awt.Color(255, 255, 255));
@@ -455,9 +455,10 @@ public class principal extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new principal().setVisible(true);
+
                 guiche = new guiche();
                 new guiche().setVisible(true);
+                new principal().setVisible(true);
             }
         });
         

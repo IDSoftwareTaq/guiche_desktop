@@ -4,6 +4,8 @@
  */
 package guiche;
 
+import javax.swing.ImageIcon;
+
 import model.Sistema;
 
 /**
@@ -40,6 +42,7 @@ public class guiche extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
 
+        setIconImage(new ImageIcon(getClass().getResource("/icone.png")).getImage()); 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Guiche Eletrônico - V. 0.0.1");
         setBounds(new java.awt.Rectangle(350, 50, 1280, 960));
