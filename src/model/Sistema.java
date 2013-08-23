@@ -1,11 +1,13 @@
 package model;
 
-import java.applet.Applet;
-import java.applet.AudioClip;
 import java.io.File;
-import java.net.MalformedURLException;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import sun.audio.AudioPlayer;
+import sun.audio.AudioStream;
 
 public class Sistema {
 	
@@ -88,12 +90,12 @@ public class Sistema {
 	
 	private void tocaMusica(){
 		try {
-			AudioClip som = Applet.newAudioClip(new File("src/sound/som.wav").toURI().toURL());
-			som.play();
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+            InputStream in = new FileInputStream(new File("src/sound/som.wav"));
+            AudioStream  as = new AudioStream(in); 
+            AudioPlayer.player.start(as);
+         }catch (Exception ex){
+           ex.printStackTrace();
+         }
 	}
 	
 	public class Play implements Runnable{
