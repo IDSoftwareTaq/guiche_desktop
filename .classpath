@@ -4,5 +4,6 @@
 	<classpathentry kind="lib" path="dist/guiche2.jar"/>
 	<classpathentry kind="lib" path="dist/lib/AbsoluteLayout.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Italo/Desktop/JLayer1.0.1/jl1.0.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
