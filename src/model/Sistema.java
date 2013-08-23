@@ -1,15 +1,11 @@
 package model;
 
-import java.io.BufferedInputStream;
+import java.applet.Applet;
+import java.applet.AudioClip;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
-
-import javazoom.jl.decoder.JavaLayerException;
-import javazoom.jl.player.Player;
-
 
 public class Sistema {
 	
@@ -17,8 +13,6 @@ public class Sistema {
 	private FilaPrioritaria fila;
 	private List<Senha> senhasChamadas;
 	private List<Senha> senhasGeradas;
-	
-	private Player player;
 	
 	private Sistema(){
 		fila = FilaPrioritaria.getInstance();
@@ -51,10 +45,9 @@ public class Sistema {
 		}else{
 			senhasChamadas.add(0, retorno);
 		}
-		System.out.println("antes");
+		
 		Thread t = new Thread(new Play());
 		t.start();
-		System.out.println("passou");
 		return retorno;
 	}
 	
@@ -81,27 +74,19 @@ public class Sistema {
 	}
 	
 	private void tocaMusica(){
-		FileInputStream fis;
 		try {
-			File som = new File("src/sound/som.mp3");
-			fis = new FileInputStream(som);
-			BufferedInputStream bis = new BufferedInputStream(fis);
-			this.player = new Player(bis);
-			player.play();
-		} catch (FileNotFoundException e) {
+			AudioClip som = Applet.newAudioClip(new File("src/sound/som.wav").toURL());
+			som.play();
+		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (JavaLayerException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
+		}
 	}
 	
 	public class Play implements Runnable{
 
 		@Override
 		public void run() {
-			System.out.println("tocando");
 			tocaMusica();
 		}
 		
