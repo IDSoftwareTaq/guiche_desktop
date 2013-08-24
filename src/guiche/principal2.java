@@ -55,6 +55,7 @@ public class principal2 extends javax.swing.JFrame {
         jTextField26 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setIconImage(new ImageIcon(getClass().getResource("/icone.png")).getImage());
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -169,8 +170,7 @@ public class principal2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 640, 320, 150));
-
-        
+   
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/botao_p.png")));  // NOI18N
         jButton3.setToolTipText("Senha Prioritária");
         jButton3.setBorder(null);
@@ -221,7 +221,7 @@ public class principal2 extends javax.swing.JFrame {
                 jTextField2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 260, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 260, -1));
 
         jTextField23.setFont(new java.awt.Font("Arial Black", 0, 48)); // NOI18N
         jTextField23.setEditable(false);
@@ -287,6 +287,11 @@ public class principal2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 180, 90));
+        
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/logo.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 10, 500, -1));
+
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/baixo.png"))); // NOI18N
         //jLabel2.setToolTipText("");
@@ -295,6 +300,8 @@ public class principal2 extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/cima.png"))); // NOI18N
         //jLabel3.setToolTipText("");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
+        
+
 
         getAccessibleContext().setAccessibleDescription("");
 
@@ -441,6 +448,7 @@ public class principal2 extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField2;
