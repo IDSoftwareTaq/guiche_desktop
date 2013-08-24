@@ -31,14 +31,24 @@ public class FilaPrioritaria {
 	public Senha addSenhaConvencional(){
 		Senha senhaAdd = new Senha(senha, 0);
 		filaConvencional.add(senhaAdd);
-		senha++;
+		if (senha < 999){
+			senha++;
+		}else{
+			senha = 1;
+		}
+		
 		return senhaAdd;
 	}
 	
 	public Senha addSenhaPrioritaria(){
 		Senha senhaAdd = new Senha(senha, 1);
 		filaPrioritaria.add(senhaAdd);
-		senha++;
+		if (senha < 999){
+			senha++;
+		}else{
+			senha = 1;
+		}
+		
 		return senhaAdd;
 	}
 	

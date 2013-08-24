@@ -90,7 +90,7 @@ public class Sistema {
 	
 	private void tocaMusica(){
 		try {
-            InputStream in = new FileInputStream(new File("src/sound/som.wav"));
+            InputStream in = new FileInputStream(new File("C:/guiche/som.wav"));
             AudioStream  as = new AudioStream(in); 
             AudioPlayer.player.start(as);
          }catch (Exception ex){
