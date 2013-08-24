@@ -42,6 +42,7 @@ public class guiche2 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         senhaatual = new javax.swing.JLabel();
         senhasanteriores = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
 
         setIconImage(new ImageIcon(getClass().getResource("/icone.png")).getImage()); 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -144,6 +145,9 @@ public class guiche2 extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/baixo.png"))); // NOI18N
         //jLabel2.setToolTipText("");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 890, 1280, -1));
+        
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/background.jpg"))); // NOI18N
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 920));
 
         pack();
     }// </editor-fold>                        
@@ -223,6 +227,7 @@ public class guiche2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel background;
     private javax.swing.JLabel senhaatual;
     private javax.swing.JLabel senhasanteriores;
     private static javax.swing.JTextField jTextField1;

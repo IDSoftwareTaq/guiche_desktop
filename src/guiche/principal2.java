@@ -58,6 +58,7 @@ public class principal2 extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
 
         setIconImage(new ImageIcon(getClass().getResource("/icone.png")).getImage());
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -291,6 +292,7 @@ public class principal2 extends javax.swing.JFrame {
         getContentPane().add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 180, 90));
         
 
+        
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/senhaschamadas.png"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 330, -1, -1));
 
@@ -308,6 +310,9 @@ public class principal2 extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/cima.png"))); // NOI18N
         //jLabel3.setToolTipText("");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
+        
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/background.jpg"))); // NOI18N
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 920));
         
         getAccessibleContext().setAccessibleDescription("");
 
@@ -457,6 +462,7 @@ public class principal2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel background;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField2;
