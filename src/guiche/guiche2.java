@@ -39,6 +39,9 @@ public class guiche2 extends javax.swing.JFrame {
         jTextField10 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        senhaatual = new javax.swing.JLabel();
+        senhasanteriores = new javax.swing.JLabel();
 
         setIconImage(new ImageIcon(getClass().getResource("/icone.png")).getImage()); 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -57,7 +60,7 @@ public class guiche2 extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 500, 280));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 500, 280));
 
         jTextField5.setEditable(false);
         jTextField5.setFont(new java.awt.Font("Arial Black", 0, 70)); // NOI18N
@@ -68,7 +71,7 @@ public class guiche2 extends javax.swing.JFrame {
                 jTextField5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 440, 230, 130));
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 480, 230, 130));
 
         jTextField6.setEditable(false);
         jTextField6.setFont(new java.awt.Font("Arial Black", 0, 70)); // NOI18N
@@ -79,7 +82,7 @@ public class guiche2 extends javax.swing.JFrame {
                 jTextField6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 290, 230, 130));
+        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 330, 230, 130));
 
         jTextField7.setEditable(false);
         jTextField7.setFont(new java.awt.Font("Arial Black", 0, 70)); // NOI18N
@@ -90,7 +93,7 @@ public class guiche2 extends javax.swing.JFrame {
                 jTextField7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 440, 230, 130));
+        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 480, 230, 130));
 
         jTextField8.setEditable(false);
         jTextField8.setFont(new java.awt.Font("Arial Black", 0, 70)); // NOI18N
@@ -101,7 +104,7 @@ public class guiche2 extends javax.swing.JFrame {
                 jTextField8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 290, 230, 130));
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 330, 230, 130));
 
         jTextField9.setEditable(false);
         jTextField9.setFont(new java.awt.Font("Arial Black", 0, 70)); // NOI18N
@@ -112,7 +115,7 @@ public class guiche2 extends javax.swing.JFrame {
                 jTextField9ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 440, 230, 130));
+        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 480, 230, 130));
 
         jTextField10.setEditable(false);
         jTextField10.setFont(new java.awt.Font("Arial Black", 0, 70)); // NOI18N
@@ -123,7 +126,16 @@ public class guiche2 extends javax.swing.JFrame {
                 jTextField10ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 290, 230, 130));
+        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 330, 230, 130));
+        
+        senhasanteriores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/senhasanteriores.png")));
+        getContentPane().add(senhasanteriores, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, 660, 70));
+        
+        senhaatual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/senhaatual.png")));
+        getContentPane().add(senhaatual, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 400, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/logo.png")));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 10, 500, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/cima.png"))); // NOI18N
         //jLabel3.setToolTipText("");
@@ -210,6 +222,9 @@ public class guiche2 extends javax.swing.JFrame {
     // Variables declaration - do not modify                     
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel senhaatual;
+    private javax.swing.JLabel senhasanteriores;
     private static javax.swing.JTextField jTextField1;
     private static javax.swing.JTextField jTextField10;
     private static javax.swing.JTextField jTextField5;

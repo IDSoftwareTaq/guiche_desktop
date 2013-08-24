@@ -56,6 +56,8 @@ public class principal2 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setIconImage(new ImageIcon(getClass().getResource("/icone.png")).getImage());
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -221,7 +223,7 @@ public class principal2 extends javax.swing.JFrame {
                 jTextField2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 260, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 295, 260, -1));
 
         jTextField23.setFont(new java.awt.Font("Arial Black", 0, 48)); // NOI18N
         jTextField23.setEditable(false);
@@ -289,6 +291,12 @@ public class principal2 extends javax.swing.JFrame {
         getContentPane().add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 180, 90));
         
 
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/senhaschamadas.png"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 330, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/senhasgeradas.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
+
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/logo.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 10, 500, -1));
 
@@ -301,8 +309,6 @@ public class principal2 extends javax.swing.JFrame {
         //jLabel3.setToolTipText("");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
         
-
-
         getAccessibleContext().setAccessibleDescription("");
 
         pack();
@@ -449,6 +455,8 @@ public class principal2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField2;
@@ -463,6 +471,8 @@ public class principal2 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField30;
     private javax.swing.JTextField jTextField31;
+
+    
     private static Frame guiche;
     // End of variables declaration                   
 }
