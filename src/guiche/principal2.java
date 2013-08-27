@@ -62,7 +62,7 @@ public class principal2 extends javax.swing.JFrame {
 
         setIconImage(new ImageIcon(getClass().getResource("/icone.png")).getImage());
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Guiche Eletrônico™ - V. 0.0.1");
+        setTitle("Principal - Guiche Eletrônico™ - V. 0.0.1");
         setBackground(new java.awt.Color(255, 255, 255));
         setResizable(false);
         setBounds(new java.awt.Rectangle(350, 50, 1280, 960));

@@ -46,7 +46,7 @@ public class guiche2 extends javax.swing.JFrame {
 
         setIconImage(new ImageIcon(getClass().getResource("/icone.png")).getImage()); 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Guiche Eletrônico™ - V. 0.0.1");
+        setTitle("Guichê - Guiche Eletrônico™ - V. 0.0.1");
         setBounds(new java.awt.Rectangle(350, 50, 1280, 960));
         setMinimumSize(new java.awt.Dimension(1280, 960));
         setResizable(false);
@@ -129,8 +129,8 @@ public class guiche2 extends javax.swing.JFrame {
         });
         getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 330, 230, 130));
         
-        senhasanteriores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/senhasanteriores.png")));
-        getContentPane().add(senhasanteriores, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, 660, 70));
+        senhasanteriores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/senhaschamadas.png")));
+        getContentPane().add(senhasanteriores, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 250, 660, 70));
         
         senhaatual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/guiche/images/senhaatual.png")));
         getContentPane().add(senhaatual, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 400, -1));
